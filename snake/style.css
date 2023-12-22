@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(60, 114, 124);
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ul li{
+    display: inline-table;
+    width: 100px;
+    margin: auto;
+}
+
+#tropy{
+    position: fixed;
+    padding-right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+#scoreboard{
+    font-size: 50px;
+    position: fixed;
+    color: rgb(255, 255, 255);
+}
+
+#croun{
+    margin-right: 30px;
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    text-align: left;
+}
+
+#highscoreboard{
+    font-size: 50px;
+    position: fixed;
+    color: white;
+}
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
