@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./Images/IMG-20230619-WA0075-removebg-preview (1).pngi" type="image/x-icon">
+
+    <style>
+        @media (max-width: 768px) {
+
+            /* Gaya khusus untuk perangkat dengan lebar layar 768px atau lebih besar */
+            body {
+                font-size: 13px;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to top, rgb(19, 19, 19), rgb(0, 0, 0));
+        }
+
+        nav {
+            background: linear-gradient(to bottom, rgb(39, 39, 39), black);
+        }
+
+        .hero-section {
+            position: relative;
+            color: #fff;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('./Images/IMG-20230929-WA0039.jpg') center/cover no-repeat;
+
+        }
+
+        .hero-text {
+            position: relative;
+            top: 45%;
+        }
+
+        .hero-text .text1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .hero-text .text2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container .image-1 .img {
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .container .image-1 .img img {
+            filter: brightness(40%);
+            width: 18rem;
+            height: auto;
+
+        }
+
+        .container .image-1 .text-center1 {
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            font-weight: bolder;
+            color: #fff;
+            font-size: 15px;
+
+        }
+
+        .container .image-1 .text-center {
+            position: absolute;
+            top: 55%;
+            color: #fff;
+            font-weight: bolder;
+            left: 35%;
+            font-size: small;
+
+        }
+
+
+        .container .row .img .text-center12 {
+            position: absolute;
+            top: 40%;
+            color: #fff;
+            font-weight: bolder;
+            left: 29%;
+            font-size: 15px;
+        }
+
+        .container .row .img .text-1 {
+            position: absolute;
+            top: 40%;
+            color: #fff;
+            font-weight: bolder;
+            left: 10%;
+            font-size: 15px;
+        }
+
+        .container .row .img .text-center-1 {
+            position: absolute;
+            top: 55%;
+            color: #fff;
+            font-weight: bolder;
+            left: 25%;
+            font-size: 15px;
+        }
+
+        .container .row .img .text-2 {
+            position: absolute;
+            top: 40%;
+            color: #fff;
+            font-weight: bolder;
+            left: 10%;
+            font-size: 15px;
+        }
+
+        .container .row .img .text-3 {
+            position: absolute;
+            top: 50%;
+            color: #fff;
+            font-weight: bolder;
+            left: 10%;
+            font-size: 15px;
+        }
+
+        .container .row .img .text-4 {
+            position: absolute;
+            top: 45%;
+            color: #fff;
+            font-weight: bolder;
+            left: 7%;
+            font-size: 15px;
+        }
+
+        .container .row .img img#full {
+            width: 100%;
+            height: auto;
+
+        }
+
+        a#a {
+            background: green;
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 2rem;
+            font-weight: bolder;
+
+        }
+
+        .whats-app {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 15px;
+            background-color: green;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        @media screen and (max-width: 900px) {
+
+            .footer1 .footer-top .container,
+            .footer1 .footer-bottom .container,
+            .footer2 .container {
+                flex-direction: column;
+            }
+        }
+
+        footer * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer {
+            color: #fff;
+            background: #121315;
+        }
+
+        footer p {
+            color: #ccc;
+            max-width: 25em;
+            font-size: 0.9em;
+            line-height: 23px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer h4 {
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        .footer2 .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2em;
+        }
+
+
+        .brand {
+            display: block;
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 1em;
+        }
+
+        .media-icons li,
+        .service-icons li {
+            display: inline-block;
+            margin: 0.5em 0.5em 0.5em 0;
+        }
+
+        .media-icons a {
+            font-size: 1.1em;
+            width: 2em;
+            height: 2em;
+            border: 1px #fff solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .media-icons a:hover {
+            background: #fff;
+            color: #111;
+            
+        }
+
+        .service-icons img {
+            width: 3rem;
+        }
+
+
+        .footer-bottom {
+            border-top: 1px #dbdbdb solid;
+        }
+
+        .footer2 .menu {
+            margin-bottom: 3em;
+        }
+
+        .footer2 .menu li {
+            display: inline-block;
+            margin: 0 0.7em 0.7em 0;
+            text-align: center;
+        }
+
+        .footer2 .menu a {
+            transition: 0.3s;
+            font-weight: 600;
+        }
+
+        .footer2 .menu a:hover {
+            color: #ff2b00;
+        }
+
+        .footer2 a:hover {
+            color: #ff2b00;
+            transition: 0.3s;
+        }
+
+        .input-wrap {
+            margin: 1em 0;
+            display: block;
+        }
+
+        .input-wrap input {
+            padding: 0.5em;
+            border: none;
+            background: #20232a;
+            color: #ccc;
+        }
+
+        .input-wrap input:focus {
+            outline: none;
+        }
+
+        .input-wrap button {
+            padding: 0.5em;
+            background: #ff2b00;
+            border: none;
+            color: #fff;
+        }
+
+        .input-wrap button:hover {
+            background: #fff;
+            color: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./Images/IMG-20230619-WA0070-removebg-preview.png" alt="" width="60rem" height="60rem">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-2">
+                        <a href="#service" class="nav-link text-white">Our Service</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="#paket" class="nav-link text-white">Paket Hemat</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="#ttm" class="nav-link text-white">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="#km" class="nav-link text-white">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <a class="whats-app" href="#booking">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1 class="text1" data-aos="fade-right" data-aos-duration="3000">KING AUTO DETAILING</h1>
+            <h6 class="text2 text-center" data-aos="fade-left" data-aos-duration="3000">THE BEST CAR MAINTENANCE AND
+                COATING SPECIALIST IN MALANG.</h6>
+        </div>
+    </div>
+    <center>
+        <div id="service" class="container p-5">
+            <div class="text-white">
+                <h3 data-aos="fade-right" data-aos-duration="1000">OUR SERVICE</h3>
+                <hr style="border: 2px solid white;">
+            </div>
+            <div class="row image-1">
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/interior.jpg" alt=""></a>
+                        <div class="text-center1">SALON INTERIOR</div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/exterior.png" alt=""></a>
+                        <div class="text-center1">SALON EXTERIOR</div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/lamandepan - Copy.jpg" alt=""></a>
+                        <div class="text-center12">SALON MESIN</div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/coatingcar.jpg" alt=""></a>
+                        <div class="text-center1">COATING ONLY</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row image-1">
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/karpet kolong mobil.jpg" alt=""></a>
+                        <div class="text-center text-1">PEMASANGAN KARPET DASAR</div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/20180719_072659.png" alt=""></a>
+                        <div class="text-center text-1">PEMASANGAN BEKLEED JOK</div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/pengecatan body mobil.jpg" alt=""></a>
+                        <div class="text-center text-3">PENGECATAN BODY MOBIL</div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img src="./Images/kolong mobil.jpg" alt=""></a>
+                        <div class="text-center text-4">ANTI KARAT KOLONG MOBIL</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="paket" class="container p-5">
+            <div class="text-white">
+                <h3 data-aos="fade-right" data-aos-duration="1000">PAKET HEMAT</h3>
+                <hr style="border: 2px solid white;">
+            </div>
+            <div class="row image-1">
+                <div class="col-md-6 p-4">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img id="full" src="./Images/paket coating.jpg" alt=""></a>
+                        <div class="text-center45 text-white">PAKET SALON FULL DETAILING</div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-4 ">
+                    <div class="img">
+                        <a href="./deskripsi1.html"><img id="full" src="./Images/salon full.jpg" alt=""></a>
+                        <div class="text-center45 text-white">PAKET COATING & SALON FULL DETAILING</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="booking" class="container p-5">
+            <div class="text-white">
+                <h3 data-aos="fade-right" data-aos-duration="1000">BOOKING NOW FOR WHATSAPP</h3>
+                <hr style="border: 2px solid white;">
+            </div>
+            <div class="a p-5">
+                <a id="a" href="https://api.whatsapp.com/send?phone=6281333330303" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i> KLICK ME</a>
+            </div>
+            <hr style="border: 2px solid white;">
+        </div>
+
+
+        <div id="ttm" class="container p-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-white" style="text-align: left;">
+                        <h2 data-aos="fade-right" data-aos-duration="1000">TENTANG KAMI</h2>
+                        <hr style="border: 2px solid white;">
+                        <P>Selamat datang di <i>King Auto Detailing</i>, tempat di mana dedikasi kami terhadap keindahan
+                            kendaraan bertemu dengan keterampilan tingkat tinggi. Sebagai pemimpin dalam industri detail
+                            otomotif, kami menghadirkan layanan yang tak tertandingi dalam pemeliharaan dan perawatan
+                            kendaraan Anda. Dengan staf profesional dan berpengalaman, kami berkomitmen untuk memberikan
+                            hasil yang luar biasa setiap kali Anda mempercayakan kendaraan Anda kepada kami. Dari
+                            detailing interior yang teliti hingga perlindungan eksterior yang unggul, <i>King Auto
+                                Detailing</i> menghadirkan standar baru dalam keahlian dan kepuasan pelanggan. Bersama
+                            kami,
+                            setiap kendaraan menjadi kanvas yang kami cintai dan perhatikan hingga ke setiap detailnya.
+                            Temukan keajaiban detail otomotif dengan <i>King Auto Detailing</i>.</P>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="foto">
+                        <img src="./Images/IMG-20230619-WA0075-removebg-preview (1).png" width="70%" height="Auto"
+                            alt="" style="padding-top: 6rem; padding-bottom: 5rem;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="km" class="container p-5">
+            <div class="row">
+                <div class="col-md-6" style="text-align: left; justify-content: left;">
+                    <div class="text-white">
+                        <h2 data-aos="fade-right" data-aos-duration="1000">HUBUNGI KAMI</h2>
+                        <hr style="border: 2px solid white;">
+                    </div>
+
+                    <div class="text-white" style="padding-top: 2rem;">
+                        <p><span style="font-weight: bold;">Alamat :</span><span> Jl. Raya Bunut Wetan No.661, Krajan,
+                                Bunut Wetan, Kec. Pakis, Kabupaten Malang, Jawa Timur 65154</span></p>
+                        <p><span style="font-weight: bold;">Whatsapp :</span><span> +62 821-4154-6344</span></p>
+                        <p><span style="font-weight: bold;">Instagram :</span><span> kingauto.malang</span></p>
+                        <p><span style="font-weight: bold;">Email :</span><span>
+                                Kingautodetailingmalang@gmail.com</span></p>
+                        <p><span style="font-weight: bold;">Facebook :</span><span> King Auto Detailing</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="padding-top: 3rem; text-align: center;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.430635239653!2d112.70142847405243!3d-7.954371279254452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4fd58911ad433b73%3A0x10447aad7d336a33!2sKING%20AUTO%20DETAILING!5e0!3m2!1sid!2sid!4v1706944648191!5m2!1sid!2sid"
+                        width="295" height="295" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer2">
+            <div class="container">
+                <div class="col1">
+                    <a href="#" class="brand" data-aos="fade-right" data-aos-duration="1000">KING AUTO DETAILING</a>
+                    <ul class="media-icons">
+                        <li>
+                            <a href="https://www.facebook.com/KingautoJatim?mibextid=ZbWKwL" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=6281333330303" target="_blank"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kingauto.malang/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:Kingautodetailingmalang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul class="menu">
+                        <li>
+                            <a href="#service">OUR SERVICE</a>
+                        </li>
+                        <li>
+                            <a href="#paket">PAKET HEMAT</a>
+                        </li>
+                        <li>
+                            <a href="#ttm">TENTANG KAMI</a>
+                        </li>
+                        <li>
+                            <a href="#km">HUBUNGI KAMI</a>
+                        </li>
+                    </ul>
+                    <p>
+                        Selamat datang di <i>King Auto Detailing</i>, tempat di mana dedikasi kami terhadap keindahan
+                        kendaraan bertemu dengan keterampilan tingkat tinggi. Sebagai pemimpin dalam industri detail
+                        otomotif, kami menghadirkan layanan yang tak tertandingi dalam pemeliharaan dan perawatan
+                        kendaraan Anda.
+                    </p>
+                </div>
+                <div class="col3">
+                    <p>Pesan Untuk Kami</p>
+                    <form>
+                        <div class="input-wrap">
+                            <input type="text" placeholder="Pesan">
+                            <button type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="service-icons">
+                        <li>
+                            <img src="./Images/3m-removebg-preview.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./Images/mm-removebg-preview.png" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright text-center font-weight-bold p-2"
+            style="background: linear-gradient(to top, #FFD700, #FFA500);">
+            <p>Copyright <i class="far fa-copyright"></i> By: Moch Aris Rofii</p>
+        </div>
+
+    </center>
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./fontawesome-free-6.5.1-web/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

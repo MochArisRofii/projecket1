@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .toggle-container {
+    position: relative;
+  }
+  
+  .ios-toggle {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  label {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  label:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s;
+  }
+  
+  .ios-toggle:checked + label:before {
+    transform: translateX(20px);
+  }
+  

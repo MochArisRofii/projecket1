@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-d/aV0QViBOt9zFCqEQS5qUImjBXCVD8n8ehPapys3U0CZ4MIxFgZD4I8Ob2HW8Kw" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .social-buttons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .social-buttons li {
+            margin-right: 10px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 8px; /* Menyesuaikan dengan tingkat kebulatan yang diinginkan */
+            transition: background-color 0.3s;
+        }
+
+        .social-buttons i.fa-facebook-f {
+            font-size: 24px;
+            color: #3d5998; /* Default color */
+            transition: color 0.3s;
+        }
+
+        /* Hover effect for the buttons */
+        .social-buttons a#fb:hover {
+            background-color: #3d5998; /* Warna latar saat hover */
+        }
+
+        /* Facebook */
+        .social-buttons .facebook:hover i {
+            color: white;
+        }
+
+        .social-buttons i.fa-pinterest {
+            font-size: 24px;
+            color: #e50122; /* Default color */
+            transition: color 0.3s;
+        }
+
+        .social-buttons a#pt:hover {
+            background-color: #e50122; /* Warna latar saat hover */
+        }
+
+        /* Pinterest */
+        .social-buttons .pinterest:hover i {
+            color: white;
+        }
+
+        .social-buttons i.fa-twitter {
+            font-size: 24px;
+            color: #54acec;
+            transition: color 0.3s;
+        }
+
+        .social-buttons a#tw:hover {
+            background-color: #54acec;
+        } 
+
+        /* Twitter */
+        .social-buttons .twitter:hover i {
+            color: #fff;
+        }
+
+        .social-buttons i.fa-tumblr {
+            font-size: 24px;
+            color: #314258;
+            transition: color 0.3s;
+        }
+
+        .social-buttons a#tb:hover {
+            background-color: #314258;
+        }
+
+        /* Tumblr */
+        .social-buttons .tumblr:hover i {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul class="social-buttons">
+        <li class="facebook"><a id="fb" href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="pinterest"><a  id="pt" href="#"><i class="fab fa-pinterest"></i></a></li>
+        <li class="twitter"><a id="tw" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="tumblr"><a id="tb" href="#"><i class="fab fa-tumblr"></i></a></li>
+    </ul>
+</body>
+</html>

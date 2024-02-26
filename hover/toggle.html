@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Toggle Switch</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 60px;
+            height: 30px;
+        }
+
+        .toggle-input {
+            display: none;
+        }
+
+        .toggle-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #4c00ff;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-input:checked+.toggle-label {
+            background-color: #00d9ff;
+            /* Change color when the switch is turned on */
+        }
+
+        .toggle-label::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2px;
+            width: 26px;
+            height: 26px;
+            background-color: #00d9ff;
+            border-radius: 50%;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .toggle-input:checked+.toggle-label::before {
+            transform: translateX(30px) translateY(-50%);
+            background-color: #4c00ff;
+            /* Change color of the circle when the switch is turned on */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="toggle-switch">
+        <input type="checkbox" id="switch" class="toggle-input">
+        <label for="switch" class="toggle-label"></label>
+    </div>
+
+    <div class="text">
+        <h1>IOS TOGGLE</h1>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-section {
+            position: relative;
+            color: #fff;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./Images/fish-bowl-plants-indoor-water-garden-1119-1200x600-1.jpg') center/cover no-repeat;
+            /* Ganti 'your-image.jpg' dengan path gambar Anda */
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 35%;
+            right: 45%;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h2 {
+            font-weight: bold;
+        }
+
+        .carousel-inner .carousel-item .carousel-caption h3 p button {
+            font-weight: bold;
+            margin-top: 3rem;
+            padding-top: 2rem;
+        }
+
+        .card img.card-img-top {
+            width: 17rem;
+            padding: 15px;
+            margin-left: 11px;
+        }
+
+        .card {
+            border: 0;
+            background-color: #ecf1ff;
+            ;
+        }
+
+        .card img#full {
+            width: 29rem;
+            margin-right: 20rem;
+        }
+
+        .card img#fsc {
+            margin-left: 6rem;
+        }
+
+        .card#bd {
+            border-radius: 10px;
+        }
+
+        .row img.imgs {
+            border: 14px double #000;
+
+        }
+
+        .container #bgclr {
+            color: blue;
+            width: 100%;
+            height: 50%;
+        }
+
+        .bg {
+            background-color: #5369a2;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        .tpy .row ul li {
+            padding-top: 4rem;
+            padding-right: 20rem;
+        }
+
+        /* Tambahkan gaya lainnya sesuai kebutuhan Anda */
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Bootstrap 5 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./Images/Logo-ands-1536x881 (1).png" alt="" width="80" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a href="#" class="nav-link">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a href="#" class="nav-link">Keunggulan</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a href="#" class="nav-link">Produk</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a href="#" class="nav-link">Galeri</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a href="#" class="nav-link">Testimoni</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a href="#" class="nav-link">Hubungi</a>
+                    </li>
+                </ul>
+                <button class="ms-auto rounded-pill text-dark"
+                    style="background-color: rgb(118, 235, 94); border: none; height: 45px; width: 200px;"> Hubungi
+                    Kami</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <P>
+            <h5 style="color: rgb(28, 155, 194);">Ands Fish & Plant</h5>
+            </P>
+            <p>
+            <h2>TENTANG KAMI</h2>
+            </p>
+            <p>Ands fish and plant adalah sebuah usaha yang memiliki dedikasi dalam menyediakan produk</p>
+            <p>berkualitas untuk mengembangkan kebun dan akuarium Anda. Dengan pengetahuan luas tentang</p>
+            <p>tanaman hias dan ikan hias, kami berkomitmen untuk membantu Anda merawat keindahan alami</p>
+            <p>dengan produk terbaik kami,</p>
+            <button class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> Hubungi Kami</button>
+        </div>
+    </div>
+
+    <div class="container p-5" style="height: 40vh;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/download (1).png" height="250vh" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>First slide label</h3>
+                        <p>Setiap hari kami melalui berbagai macam hal diluar dugaan, mulai dari hal pegemasan,</p>
+                        <p>tekanan tugensi bahkan predeksi terburuk, yaitu pengiriman. Dengan berbagai macam hal</p>
+                        <p>itulah kami terus menerus berbenah, hingga kami dapat menemukan formula yang dirasa</p>
+                        <p>aman untuk kualitas produk yang kami jual</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/fish-bowl-plants-indoor-water-garden-1119-1200x600-1.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/ilustrasi-alat-berkebun_169.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container p-3 ">
+        <div class="text-center p-5">
+            <h2 style="font-weight: bold;">Produk Kami</h2>
+            <div class="row">
+                <div class="col-md-4 p-5">
+                    <div class="card" style="width: 18rem; height: 35rem">
+                        <img src="./Images/bunga-3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4" style="font-weight: bold;">Tanaman Hias</h5>
+                            <p class="card-text">Hadirkan keindahan alam ke dalam rumah Anda dengan koleksi tanaman hias
+                                pilihan kami. Dari tanaman berbunga eksotis hingga hijauan yang menenangkan, Anda akan
+                                menemukan segala yang Anda butuhkan untuk menciptakan taman dalam ruangan yang
+                                menakjubkan.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-5">
+                    <div class="card" style="width: 18rem; height: 35rem;">
+                        <img src="./Images/ilustrasi-alat-berkebun_169.jpeg" height="190px" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4" style="font-weight: bold;">Alat Berkebun Berkualitas</h5>
+                            <p class="card-text">Kebun yang indah membutuhkan alat yang tepat. Jelajahi katalog alat
+                                kebun kami yang lengkap, termasuk cangkul, sekop, alat pemangkas, dan banyak lagi.
+                                Jadikan setiap saat berkebun menjadi pengalaman yang menyenangkan dengan alat
+                                berkualitas</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./Images/60aa917e6ac4b.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4" style="font-weight: bold;">Benih Tanaman</h5>
+                            <p class="card-text">Tanamkan keajaiban alam di setiap sudut dengan koleksi benih eksotis
+                                kami. Dari bunga yang memukau hingga tanaman aromatik yang mengharumkan udara, kami
+                                memenuhi kebutuhan menanam Anda, baik di taman outdoor yang luas maupun dalam pot di
+                                jendela rumah Anda. Berkreasilah dengan keanekaragaman sayuran organik, buah lezat, dan
+                                tanaman menyejukkan mata</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <div class="card" id="bd" style="width: 30rem; height: 30rem;">
+                        <img id="full" src="./Images/Pupuk-Organik-Foto-Utama.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4" style="font-weight: bold;">Pupuk untuk Pertumbuhan Optimal</h5>
+                            <p class="card-text">Tanaman yang indah memerlukan perawatan yang tepat. Lengkapi koleksi
+                                pupuk organik dan anorganik kami yang dapat membantu tanaman Anda tumbuh subur dan
+                                berbunga cantik. Dengan pupuk dari kami, kebun Anda akan selalu menjadi pusat
+                                perhatian..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5">
+                    <div class="card" id="bd" style="width: 30rem; height: 30rem;">
+                        <img id="fsc" src="./Images/ikan-2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4" style="font-weight: bold;">Akuarium Dan Ikan Hias</h5>
+                            <p class="card-text">Tanamkan keajaiban alam di setiap sudut dengan koleksi benih eksotis
+                                kami. Dari bunga yang memukau hingga tanaman aromatik yang mengharumkan udara, kami
+                                memenuhi kebutuhan menanam Anda, baik di taman outdoor yang luas maupun dalam pot di
+                                jendela rumah Anda. Berkreasilah dengan keanekaragaman sayuran organik, buah lezat, dan
+                                tanaman menyejukkan mata</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5">
+        <div class="text-center">
+            <h2 style="font-weight: bold;">Galeri Produk Kami</h2>
+            <div class="row">
+                <div class="col-md-4 p-5">
+                    <img src="./Images/bunga-1.jpeg" width="150px" alt="" class="imgs">
+                </div>
+                <div class="col-md-4 p-5">
+                    <img src="./Images/bunga-2.jpeg" width="150px" alt="" class="imgs">
+                </div>
+                <div class="col-md-4 p-5">
+                    <img src="./Images/bunga-3.jpeg" width="200px" alt="" class="imgs">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-5">
+                    <img src="./Images/bunga-4-1.jpeg" width="150px" alt="" class="imgs">
+                </div>
+                <div class="col-md-4 p-5">
+                    <img src="./Images/bunga-5.jpeg" width="200px" alt="" class="imgs">
+                </div>
+                <div class="col-md-4 p-5">
+                    <img src="./Images/ikan-1.jpeg" width="200px" alt="" class="imgs">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="font-weight: bold; color: #fff; padding: 50px;">TESTIMONI</h2>
+                <div class="row">
+                    <div class="col-md-6 p-5">
+                        <div class="card" id="bd" style="width: 30rem; border-radius: 2rem; height: 18rem;">
+                            <a href=""><i class="fa-solid fa-star"
+                                    style="color: #5369a2; font-size: 2rem; padding-top: 4rem;"></i></a>
+                            <div class="card-body">
+                                <h5 class="card-title mb-4" style="font-weight: bold; color: #5369a2;">Fauzan</h5>
+                                <p class="card-text" style="font-size: smaller; padding-bottom: 3rem; color: blue;">
+                                    "Koleksi tanaman lengkap banget! Buat pecinta tanaman pasti seneng banget ngeliat
+                                    koleksi-koleksi tanaman di sini. Top dehl"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-5">
+                        <div class="card" id="bd" style="width: 30rem; border-radius: 2rem;">
+                            <a href=""><i class="fa-solid fa-thumbs-up"
+                                    style="color: #5369a2; font-size: 2rem; padding-top: 4rem;"></i></a>
+                            <div class="card-body">
+                                <h5 class="card-title mb-4" style="font-weight: bold; color: #5369a2;">Caca</h5>
+                                <p class="card-text" style="font-size: smaller; padding-bottom: 3rem; color: blue;">"Si
+                                    penjual selain ramah juga pinter banget, dapet ilmu baru tentang merawat ikan dari
+                                    beliau, ini tempat wajib buat aku yang hobi ngerawat ikan di rumah, Bakalan sering
+                                    mampir deh!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tpy">
+        <div class="container-fluid p-5">
+            <div class="text-center p-5">
+                <h2 style="font-weight: bold; color: #5369a2;">HUBUNGI KAMI</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><i class="fa-solid fa-phone"
+                                    style="font-size: 1rem; margin-right: 15px; color: #5369a2;"></i><b
+                                    style="color: #5369a2;">081929383099</b></li>
+                            <li><i class="fa-brands fa-whatsapp"
+                                    style="font-size: 1rem; margin-right: 15px; color: #5369a2;"></i><b
+                                    style="color: #5369a2;">081929383099</b></li>
+                            <li><i class="fa-solid fa-envelope"
+                                    style="font-size: 1rem; margin-right: 15px; color: #5369a2;"></i><b
+                                    style="color: #5369a2;">mochrofii@gmail.com</b></li>
+                            <li><i class="fa-brands fa-instagram"
+                                    style="font-size: 1rem; margin-right: 15px; color: #5369a2;"></i><b
+                                    style="color: #5369a2;">mochrofii@gmail.com</b></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 p-5">
+                        <img src="./Images/9.png" style="border-radius: 2rem;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright text-center font-weight-bold p-2 text-white" style="background-color: #5369a2;">
+        <h6>
+            <p class="container mt-4">Copyright <i class="far fa-copyright"></i> 2023 | ands.my.id Website By Seratus Digital</p>
+        </h6>
+    </div>
+
+
+
+    <!-- Bootstrap 5 JS (Optional) -->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./fontawesome-free-6.5.1-web/js/all.min.js"></script>
+</body>
+
+</html>

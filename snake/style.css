@@ -48,3 +48,12 @@ ul li{
 h1{
     color: white;
 }
+
+.text--{
+    color: white;
+    margin-top: 10px;
+    margin: 4rem;
+    background-color: blue;
+    width: 10;
+    height: 10;
+}
